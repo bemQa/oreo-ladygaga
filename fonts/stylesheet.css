@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Pluto Sans';
+    src: url('PlutoSansCondRegular-Italic.eot');
+    src: url('PlutoSansCondRegular-Italic.eot?#iefix') format('embedded-opentype'),
+        url('PlutoSansCondRegular-Italic.woff2') format('woff2'),
+        url('PlutoSansCondRegular-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Pluto Sans';
+    src: url('PlutoSansCondRegular.eot');
+    src: url('PlutoSansCondRegular.eot?#iefix') format('embedded-opentype'),
+        url('PlutoSansCondRegular.woff2') format('woff2'),
+        url('PlutoSansCondRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto Sans';
+    src: url('PlutoOreo-Black.eot');
+    src: url('PlutoOreo-Black.eot?#iefix') format('embedded-opentype'),
+        url('PlutoOreo-Black.woff2') format('woff2'),
+        url('PlutoOreo-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
