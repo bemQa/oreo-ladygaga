@@ -1079,6 +1079,10 @@ footer .container {
     -webkit-overflow-scrolling: touch;
 }
 
+.long-popup {
+    padding-top: 5%;
+}
+
 .js-popup-show {
     z-index: 999;
     opacity: 1;
@@ -1467,6 +1471,23 @@ span.error {
 .popup-form .reload-captcha {
     width: 33px;
     height: 33px;
+}
+
+.popup-prize-img {
+    max-width: 260px;
+    width: 100%;
+    margin: 40px auto;
+}
+
+.popup-prize-desc {
+    max-width: 260px;
+    width: 100%;
+    margin: 0 auto 30px;
+    text-align: left;
+}
+
+.popup-prize-desc .link {
+    color: #F43378;
 }
 
 .inner-page-top {
@@ -1977,6 +1998,7 @@ span.error {
 
 .lk-code-name-wrapper {
     position: relative;
+    max-width: 275px;
     z-index: 1;
 }
 
