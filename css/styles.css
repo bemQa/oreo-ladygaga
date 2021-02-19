@@ -1378,6 +1378,10 @@ span.error {
     font-size: 16px;
 }
 
+.main-code-btn {
+    height: 70px;
+}
+
 .plug-btn {
     max-width: 340px;
     width: 100%;
@@ -1402,6 +1406,20 @@ span.error {
 .faq-btn {
     width: 280px;
     font-size: 18px;
+}
+
+.main-card-btn {
+    max-width: 220px;
+    width: 100%;
+    height: 48px;
+    padding: 16px 0;
+    font-size: 17px;
+    background: #0058C9;
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.main-card-btn2 {
+    background: linear-gradient(66.04deg, #AF1BA9 0%, #F43378 100%);
 }
 
 .btn.disabled {
@@ -1585,6 +1603,16 @@ span.error {
     margin: auto;
     width: 310px;
     height: 265px;
+}
+
+.main-block .player {
+    top: 220px;
+    left: 0;
+    right: -18%;
+    margin: auto;
+    width: 400px;
+    height: 350px;
+    transform: rotate(-7deg);
 }
 
 .player::before {
@@ -2702,6 +2730,184 @@ table td:nth-child(3) {
     color: #B3B3B3;
 }
 
+.main-page .container {
+    max-width: 1430px;
+}
+
+.main-block2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-block2-card {
+    position: relative;
+    max-width: 520px;
+    width: 100%;
+    height: 420px;
+    padding: 15px 15px 30px;
+    background: #fff;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.27);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.main-block2-card-img {
+    position: relative;
+    width: 100%;
+    height: 188px;
+    margin-bottom: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+
+.main-block2-card-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+}
+
+.main-block2-card-title {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 130%;
+    color: #0058C9;
+}
+
+.main-block2-card-text {
+    font-size: 18px;
+    line-height: 130%;
+    color: #BCBCBC;
+}
+
+.main-block {
+    position: relative;
+    min-height: 800px;
+    padding: 70px 0 100px;
+}
+
+.main-block::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: url(../img/bg-main.png) right 0 no-repeat;
+    background-size: 885px;
+    z-index: 0;
+}
+
+.main-block-wrapper {
+    position: relative;
+    display: flex;
+    -ms-align-items: flex-end;
+    align-items: flex-end;
+    justify-content: space-between;
+    max-width: 1430px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.main-block-left {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+}
+
+.main-block-left .logo {
+    position: relative;
+    display: block;
+    top: auto;
+    max-width: 365px;
+    margin-bottom: 45px;
+}
+
+.main-block-title {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.main-block-text {
+    font-size: 18px;
+    line-height: 1.3;
+    text-align: center;
+    color: #fff;
+    opacity: 0.7;
+    margin-bottom: 15px;
+}
+
+.main-code-btn-wrapper {
+    
+}
+
+.main-prizes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-prize {
+    position: relative;
+    max-width: 460px;
+    width: 100%;
+}
+
+.main-prize::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 450px;
+    height: 450px;
+    background: #0058C9;
+    border-radius: 50%;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.main-prize-img {
+    position: relative;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    height: 345px;
+    background: url(../img/prize-bg.png) center no-repeat;
+    background-size: cover;
+    box-shadow: 20px 20px 24px rgba(0, 0, 0, 0.27);
+    margin-bottom: 30px;
+    z-index: 1;
+}
+
+.main-prize-text {
+    position: relative;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    z-index: 1;
+}
+
+.main-prize-name {
+    position: relative;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    z-index: 1;
+}
+
+
 
 .main-cookie-h1 {
     margin-top: 125px;
@@ -2934,7 +3140,9 @@ table td:nth-child(3) {
     .plug-page .container,
 	.container,
     footer .container,
-    .lk-page .container {
+    .lk-page .container,
+    .prizes-page .container,
+    .main-page .container {
 		max-width: 375px;
     }
 
