@@ -1571,6 +1571,10 @@ span.error {
     right: -1100px;
 }
 
+.cookies-page .inner-note-decor1 {
+    left: -1400px;
+}
+
 .inner-note-decor2 {
     position: absolute;
     top: 280px;
@@ -1643,7 +1647,7 @@ span.error {
     height: 66%;
     background: url(../img/player/player_oreo.png) center no-repeat;
     background-size: contain;
-    animation: player 3s infinite linear;
+    animation: player 6s infinite linear;
     z-index: 1;
 }
 
@@ -2405,7 +2409,8 @@ span.error {
     margin: auto;
 }
 
-.date-filter .select2-container--open .select2-dropdown--below {
+.date-filter .select2-container--open .select2-dropdown--below,
+.date-filter .select2-container--open .select2-dropdown--above {
     padding-top: 0;
     top: 0;
     background: linear-gradient(66.04deg, #AF1BA9 0%, #F43378 100%);
@@ -3026,15 +3031,22 @@ table td:nth-child(3) {
     margin-top: 125px;
 }
 
+.cookies-page .container {
+    max-width: 1300px;
+}
+
 .cookies-page p {
     font-size: 21px;
     line-height: 152%;
     margin: 40px 0;
+    color: #1A1919;
 }
 
 .main-cookie-h3 {
+    font-weight: normal;
     font-size: 30px;
     line-height: 32px;
+    color: #E22D86;
     margin-bottom: 20px;
 }
 
@@ -3047,30 +3059,62 @@ table td:nth-child(3) {
 
 .cookie-text-ul li {
     margin: 20px 0;
+    color: #E22D86;
+}
+
+.cookie-text-ul li span {
+    color: #1A1919;
 }
 
 .main-cookie-h2 {
+    font-weight: normal;
     font-size: 30px;
     line-height: 32px;
+    color: #E22D86;
     margin-bottom: 20px;
 }
 
+.error-page {
+    position: relative;
+}
+
+.error-page::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: 0;
+    bottom: 0;
+    width: 711px;
+    height: 874px;
+    margin: 0 auto;
+    background: url(../img/bg-error.png) center 0 no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
 .error-404 {
-    max-width: 1066px;
+    position: relative;
+    max-width: 1349px;
     width: 100%;
-    height: 580px;
-    margin: 75px auto 0;
+    height: 599px;
+    margin: 0 auto 50px;
     background: url(../img/404.png) center no-repeat;
-    background-size: 1066px;
+    background-size: 1349px;
+}
+
+.error-404 + .btn-wrapper {
+    position: absolute;
+    top: 530px;
 }
 
 .error-500 {
-    max-width: 1066px;
+    position: relative;
+    max-width: 1351px;
     width: 100%;
-    height: 580px;
-    margin: 75px auto 0;
+    height: 587px;
+    margin: 0 auto 50px;
     background: url(../img/500.png) center no-repeat;
-    background-size: 1066px;
+    background-size: 1351px;
 }
 
 @media (max-width: 1440px) {
@@ -4064,20 +4108,34 @@ table td:nth-child(3) {
         line-height: 28px;
     }
 
+    .error-page::before {
+        top: 0;
+        left: -250px;
+        right: -250px;
+        width: 805px;
+        height: 550px;
+        background: url(../img/bg-main-mob.png) center bottom no-repeat;
+        background-size: cover;
+    }
+
     .error-404 {
         max-width: 375px;
         width: 100%;
-        height: 330px;
-        margin: 50px auto 20px;
+        height: 437px;
+        margin: 0 auto 20px;
         background: url(../img/404-mob.png) center no-repeat;
         background-size: 375px;
+    }
+
+    .error-404 + .btn-wrapper {
+        top: 430px;
     }
 
     .error-500 {
         max-width: 375px;
         width: 100%;
-        height: 400px;
-        margin: 50px auto 0;
+        height: 488px;
+        margin: 0 auto 0;
         background: url(../img/500-mob.png) center no-repeat;
         background-size: 375px;
     }
