@@ -3076,6 +3076,7 @@ table td:nth-child(3) {
 
 .error-page {
     position: relative;
+    min-height: 510px;
 }
 
 .error-page::before {
