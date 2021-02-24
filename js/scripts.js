@@ -121,6 +121,23 @@ $(document).ready(function () {
     }
     checkValidate();
 
+    function formatState(opt) {
+        if (!opt.id) {
+            return opt.text;
+        }
+
+        var optimage = $(opt.element).attr('data-image');
+
+        if (!optimage) {
+            return opt.text;
+        } else {
+            var $opt = $(
+                '<span class="select2-image"><div class="select2-image__img"><img src="' + optimage + '"/></div> ' + opt.text + '</span>');
+
+            return $opt;
+        }
+    }
+
     if($('.select').length > 1) {
         $('select').each(function() {
             let $this = $(this).not('.select-search');
@@ -143,6 +160,15 @@ $(document).ready(function () {
             dropdownParent: $('.select')
         });
     }
+
+    $('.image-select select').each(function() {
+        $(this).select2({
+            minimumResultsForSearch: Infinity,
+            templateResult: formatState,
+            templateSelection: formatState,
+            dropdownParent: $(this).closest('.image-select')
+        });
+    });
 
     // восстановление пароля
     $('#restore-password .btn').click(function(e){

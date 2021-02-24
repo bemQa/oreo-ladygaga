@@ -1510,6 +1510,47 @@ span.error {
     color: #F43378;
 }
 
+.image-select .select2-container .select2-selection {
+    padding: 5px 10px;
+}
+
+.image-select .select2-results__option {
+    padding: 2px 10px;
+}
+
+.image-select .select2-image {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-left: 2px;
+}
+
+.image-select .select2-image__img {
+    width: 40px;
+    background-color: #114182;
+    height: 40px;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.card-image-select .select2-image__img {
+    width: 40px;
+    height: 40px;
+    background: none;
+    border-radius: 0;
+}
+
+.image-select .select2-image__img img {
+    width: 40px;
+}
+
 .inner-page-top {
     position: relative;
     min-height: 400px;
