@@ -2924,8 +2924,12 @@ table td:nth-child(3) {
 }
 
 .main-block-right {
-    max-width: 260px;
+    max-width: 290px;
     width: 100%;
+    padding: 15px;
+    background: url(../img/ladygaga-text-bg.png) center no-repeat;
+    background-size: cover;
+    border-radius: 10px;
 }
 
 .ladygaga-text-img {
@@ -3995,9 +3999,9 @@ table td:nth-child(3) {
 
     .main-block .player {
         top: 500px;
-        left: -300px;
+        left: -310px;
         right: 0;
-        width: 240px;
+        width: 210px;
         height: 210px;
         transform: rotate(-10deg);
     }
@@ -4064,11 +4068,15 @@ table td:nth-child(3) {
         flex-direction: column;
         -ms-align-items: flex-end;
         align-items: flex-end;
-        max-width: 188px;
+        max-width: 210px;
         margin-left: auto;
+        margin-bottom: 20px;
+        padding: 15px 10px;
     }
 
     .ladygaga-text-img {
+        max-width: 164px;
+        width: 100%;
         margin: 0 auto 20px;
     }
 
@@ -4263,5 +4271,9 @@ table td:nth-child(3) {
     .main-page .title {
         font-size: 25px;
         line-height: 1.2;
+    }
+
+    .main-block::before {
+        height: 610px;
     }
 }
