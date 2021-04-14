@@ -2989,6 +2989,17 @@ table td:nth-child(3) {
     margin: auto;
 }
 
+.main-block2-card-img.lazy-img {
+    object-fit: cover;
+    background: url(../img/duet-placeholder.png) center no-repeat;
+    background-size: cover;
+}
+
+.main-block2-card-img.lazy-img.visible {
+    background: url(../img/duet.gif) center no-repeat;
+    background-size: cover;
+}
+
 .main-block2-card-title {
     font-weight: 900;
     font-size: 20px;
