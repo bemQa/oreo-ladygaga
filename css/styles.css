@@ -3174,6 +3174,82 @@ table td:nth-child(3) {
     background-size: 1351px;
 }
 
+.football-popup-wrap,
+.football-popup-inner {
+    max-width: 900px;
+}
+
+.football-popup-wrap {
+    padding: 40px 50px 20px;
+    border-radius: 0;
+}
+
+.football-popup-wrap::before {
+    content: '';
+    position: absolute;
+    top: 54px;
+    right: 0;
+    width: 895px;
+    height: 457px;
+    background: url(../img/football-popup.png) center no-repeat;
+    background-size: 895px;
+    z-index: 0;
+}
+
+.football-popup-inner {
+    height: 550px;
+}
+
+.football-popup-inner .popup__title {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.football-popup-inner .btn-wrapper {
+    justify-content: flex-start;
+    margin: 0;
+}
+
+.football-popup-inner .btn {
+    margin: 0;
+    background: #FFE601;
+    color: #004DC5;
+}
+
+.football-popup-remark {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    width: 860px;
+    margin: auto;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.football-tooltip {
+    position: fixed;
+    top: 160px;
+    right: 0;
+    width: 421px;
+    height: 618px;
+    z-index: 5;
+}
+
+.close-football-tooltip {
+    position: absolute;
+    top: 48px;
+    left: 155px;
+    margin: auto;
+    width: 48px;
+    height: 48px;
+    background: url(../img/football-tooltip-close.svg) center no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
 @media (max-width: 1440px) {
     .main-block::before {
         background-position: 120% 0;
@@ -4199,6 +4275,50 @@ table td:nth-child(3) {
         margin: 0 auto 0;
         background: url(../img/500-mob.png) center no-repeat;
         background-size: 375px;
+    }
+
+    .football-popup {
+        padding-top: 40px
+    }
+
+    .football-popup-wrap, 
+    .football-popup-inner {
+        max-width: 320px
+    }
+
+    .football-popup-wrap {
+        padding: 160px 10px 20px
+    }
+
+    .football-popup-wrap::before {
+        top: 10px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 647px;
+        background: url(../img/football-popup-mob.png) center no-repeat;
+        background-size: 321px;
+    }
+
+    .football-popup-inner {
+        height: 477px;
+    }
+
+    .football-popup-inner .popup__title {
+        font-size: 22px;
+        line-height: 25px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .football-popup-inner .btn-wrapper {
+        justify-content: center;
+    }
+
+    .football-popup-remark {
+        width: 306px;
+        font-size: 9px;
+        line-height: 10px;
     }
 }
 
