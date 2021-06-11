@@ -215,6 +215,11 @@ $(document).ready(function () {
         });
     }
     openAccordion();
+
+    $('.close-football-tooltip').click(function(e) {
+        e.preventDefault();
+        $(this).parent().fadeOut();
+    });
 });
 
 document.addEventListener("DOMContentLoaded", function() {
